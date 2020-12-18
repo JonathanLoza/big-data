@@ -26,9 +26,6 @@ const NavBar = () => {
       <Link to="/">
         <NavItem className="navitem">Prediction</NavItem>
       </Link>
-      <Link to="/graphic">
-        <NavItem className="navitem">Graphics</NavItem>
-      </Link>
     </Navbar>
   );
 };

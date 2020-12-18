@@ -2,7 +2,7 @@ import React, { useState, useEffect,useRef } from "react";
 import axios from "axios";
 import { Autocomplete, Row, Col, TextInput, Button } from "react-materialize";
 import "./prediction.css";
-axios.defaults.baseURL = "https://api.example.com";
+let url="http://6cdbedcc50f5.ngrok.io";
 
 function dict_null(d){
   let dic={}
@@ -36,7 +36,7 @@ const Prediction = () => {
     }
     setYearAC(dict);
     axios
-      .post("https://cf5ce8af1bdb.ngrok.io?type=dropdowns", {})
+      .post(url+"?type=dropdowns", {})
       .then((res) => {
         setCountryAC(res.data.countries);
         setCountryAC2(dict_null(res.data.countries));
@@ -70,7 +70,7 @@ const Prediction = () => {
     };
     console.log(data);
     axios
-      .post("https://cf5ce8af1bdb.ngrok.io", data)
+      .post(url, data)
       .then((res) => {
         setRating(res.data.prediction);
       })
