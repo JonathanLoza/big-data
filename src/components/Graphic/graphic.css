@@ -4,3 +4,16 @@
   margin-bottom:-10px !important;
 }
 
+.data-plot {
+  display: block;
+  margin: auto;
+}
+
+h2.plot-header {
+  font-size: 20px;
+}
+
+.plot-containers {
+  padding: 50px !important;
+  text-align: center;
+}

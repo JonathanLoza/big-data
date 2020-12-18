@@ -35,8 +35,8 @@ label.active {
   margin-bottom:-10px !important;
 }
 
-h2{
+h2.rating-number {
   text-align:center;
-  font-size:200px !important;
+  font-size:180px;
 }
 

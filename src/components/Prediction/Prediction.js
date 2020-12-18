@@ -194,7 +194,7 @@ const Prediction = () => {
         </Col>
         <Col l={3}>
           <h1 className="rating-header">¿Qué Rating tendrá?</h1>
-          <h2>{rating.toFixed(2)}</h2>
+          <h2 className="rating-number">{rating.toFixed(2)}</h2>
         </Col>
       </Row>
     </div>
